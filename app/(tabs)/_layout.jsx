@@ -6,6 +6,7 @@ import { images } from '../../constants/images'
 import { icons } from '@/constants/icons'
 
 const TabBar = ({focused, icon, text}) => {
+    
    if (focused){
     return (
     
@@ -69,19 +70,20 @@ const _layout = () => {
                 )
             }}
         />
+        
+
         <Tabs.Screen 
-            name="profile"
+            name="search"
             options={{
-                title: 'Profile',
+                title: 'Search',
                 headerShown: false,
-                tabBarIcon: ({focused}) => (
+                         tabBarIcon: ({focused}) => (
                     <TabBar 
                         focused={focused}
-                        icon={icons.person}
-                        text="Profile"
+                        icon={icons.search}
+                        text="search"
                     />
                 )
-           
             }}
         />
         <Tabs.Screen 
@@ -99,17 +101,18 @@ const _layout = () => {
             }}
         />
         <Tabs.Screen 
-            name="search"
+            name="profile"
             options={{
-                title: 'Search',
+                title: 'Profile',
                 headerShown: false,
-                         tabBarIcon: ({focused}) => (
+                tabBarIcon: ({focused}) => (
                     <TabBar 
                         focused={focused}
-                        icon={icons.search}
-                        text="search"
+                        icon={icons.person}
+                        text="Profile"
                     />
                 )
+           
             }}
         />
 

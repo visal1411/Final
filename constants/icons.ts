@@ -7,6 +7,10 @@ import star from "@/assets/icons/star.png";
 import play from "@/assets/icons/play.png";
 import arrow from "@/assets/icons/arrow.png";
 import logo1 from "@/assets/icons/logo1.png";
+import logo2 from "@/assets/icons/logo2.png";
+import heart from "@/assets/icons/heart.png";
+import fillheart from "@/assets/icons/fillheart.png";
+import trash from "@/assets/icons/trash.png";
 
 export const icons = {
   home,
@@ -18,4 +22,8 @@ export const icons = {
   play,
   arrow,
   logo1,
+  logo2,
+  heart,
+  fillheart,
+  trash,
 };

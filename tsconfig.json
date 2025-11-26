@@ -11,8 +11,14 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "nativewind-env.d.ts",
+    "app/(tabs)/index.jsx",
+    "app/_layout.tsx",
+    "app/(tabs)/_layout.jsx",
+    "components/SearchBar.tsx",
+    "app/auth/auth.tsx",
+    "lib/appwrite.ts",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    "nativewind-env.d.ts"
-, "app/(tabs)/index.jsx", "app/_layout.tsx", "app/(tabs)/_layout.jsx", "components/SearchBar.jsx"  ]
+    "expo-env.d.ts"
+, "components/MoviesCard.tsx"  ]
 }
