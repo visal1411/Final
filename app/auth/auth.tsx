@@ -60,15 +60,17 @@ import { View } from "react-native";
 import { Button, Text, TextInput, useTheme } from "react-native-paper";
 import { useAuth } from "@/contexts/AuthContext";
 import { useRouter } from "expo-router";
+import { useColorTheme } from '@/contexts/ColorThemeContext';
 
 export default function AuthScreen() {
   const [isSignup, setIsSignup] = useState(false);
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [error, setError] = useState<string | null>(null);
 
-  const theme = useTheme();
+  const { theme } = useColorTheme();
   const { login, register } = useAuth();
   const router = useRouter();
 
@@ -133,9 +135,9 @@ export default function AuthScreen() {
         className="mb-3"
       />
 
-      {error && <Text style={{ color: theme.colors.error }}>{error}</Text>}
+      {error && <Text style={{ color: theme.error }}>{error}</Text>}
 
-      <Button mode="contained" className="mt-6" onPress={handleAuth}>
+      <Button mode="contained" className="mt-6" onPress={handleAuth} style={{ backgroundColor: theme.secondary }}>
         {isSignup ? "Sign Up" : "Login"}
       </Button>
 

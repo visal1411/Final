@@ -97,7 +97,7 @@ const takePhoto = async () => {
       </View>
       <View style={{justifyContent: 'flex-end', padding: 16 }}>
     {/* Logout button */}
-      <Button mode="contained" onPress={handleLogout} style={{ marginBottom: 20, backgroundColor: theme.primary }}>
+      <Button mode="contained" onPress={handleLogout} style={{ marginBottom: 20, backgroundColor: theme.secondary }}>
         Logout
       </Button>
     </View>
