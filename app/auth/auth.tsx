@@ -1,63 +1,7 @@
 
-// import { useEffect, useState } from "react";
-// import { View,  } from "react-native";
-// import { Button, Text, TextInput, useTheme } from "react-native-paper";
-// import { useAuth } from "@/lib/authContext";
-// import { useRouter } from "expo-router";
-
-// export default function Authscreen() {
-//   const [isSignup, setIsSignup] = useState<boolean>(false);
-//   const [email, setEmail] = useState<string>("");
-//   const [password, setPassword] = useState<string>("");
-//   const [error, setError] = useState<string | null>("");
-//   const theme = useTheme();
-//   const handleAuth = async () => {
-//     if (!email || !password) {
-//       // Handle signup logic
-//       setError("Email and password are required.");
-//       return;
-//     } 
-//   };
-
-//   const handleSwitch = () => {
-//     setIsSignup((prev) => !prev);
-//   }
-//     return (
-        
-//             <View className="flex-1 pd-16 justify-center ">
-//               <Text className="mb-14" variant="headlineMedium">{isSignup ? "Create Account" : "Hello Welcome back"}</Text>
-//                 <TextInput 
-//                   className=" flex-1 mt-3 justify-center items-center"
-//                   // label="Email"
-//                   autoCapitalize="none" 
-//                   keyboardType="email-address" 
-//                   placeholder="example@gmail.com"
-//                   mode= "outlined"
-//                   onChangeText={setEmail}
-//                   />
-
-//                   <TextInput 
-//                   className="mt-3 "
-//                   label="Password"
-//                   keyboardType="default"
-//                   secureTextEntry
-//                   mode= "outlined"
-//                   onChangeText={setPassword}
-//                   />
-//                 {error && <Text style={{ color: theme.colors.error }}>{error}</Text>}
-//                   <Button  className="mt-16" mode="contained" onPress={handleAuth}>
-//                     {isSignup ? "Sign Up" : "Login"}
-//                   </Button>
-//                     <Button mode="text" onPress={() => handleSwitch()}>
-//                     {isSignup ? "Already Have An Account?" : "Dont have An Account? sign up"}
-//                   </Button>
-//             </View>
-        
-//     )
-// }
 import { useState } from "react";
 import { View } from "react-native";
-import { Button, Text, TextInput, useTheme } from "react-native-paper";
+import { Button, Text, TextInput } from "react-native-paper";
 import { useAuth } from "@/contexts/AuthContext";
 import { useRouter } from "expo-router";
 import { useColorTheme } from '@/contexts/ColorThemeContext';
