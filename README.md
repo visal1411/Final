@@ -232,4 +232,19 @@ Appwrite API:
 - POST /account/sessions/email - User login
 - DELETE /account/sessions/current - User logout
 - GET /account - Get current authenticated user
+
+# AI Usage In This Project
+https://chatgpt.com/share/692183f3-0f28-800f-ae1c-6ad083ce6e98 (ask about set up Auth provider and fix the camera (image picker and camera capture))
+
+https://chatgpt.com/share/69240dac-5588-800f-98cd-10b0f3560190 (i use this to search and ask about helping me with the FavouriteContext (control state of add to favourite)  and create Hook of useFavourites)
+
+https://chatgpt.com/share/69240e05-b5f8-800f-9280-206fc3719c1a (use this to explain me the process of how context work)
+
+https://chatgpt.com/share/69240e60-ba74-800f-84d1-7952c08001cf (i use this to ask about using JSON data URI and fetch API from others)
+
+https://chatgpt.com/share/69240ec1-b1f8-800f-adc4-1c75e4e185f0 (use this to check about control theme with Nativewind (useThemeContext) because im not clear with useContext yet and espiaciallly about nativewind)
+
+
+# YouTube Watched
+https://youtu.be/f8Z9JyB2EIE?si=TBl0GW0jHUSeKaKA ( I watch and follow this video in building this project)
 ---
