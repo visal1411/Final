@@ -229,8 +229,8 @@ TMDB API:
 Appwrite API:
 
 - POST /account - User registration
-- POST /account/sessions/email - User login
-- DELETE /account/sessions/current - User logout
+- POST /account/sessions/ - User login
+- DELETE /account/sessions/ - User logout
 - GET /account - Get current authenticated user
 
 # AI Usage In This Project
