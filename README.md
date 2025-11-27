@@ -106,8 +106,6 @@ services/
 
 ## Getting Started
 
-### Prerequisites
-
 - Node.js (v16 or higher)
 - npm
 - Expo CLI
@@ -172,30 +170,27 @@ This app uses Appwrite for backend authentication and data storage.
    EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
    ```
 
-## 🎨 Theming
+## Theming
 
 The app supports both light and dark themes. Users can toggle between themes in the Profile screen. The theme preference is persisted across app sessions.
 
-## 🔐 Authentication
+## Authentication
 
 The app uses Appwrite for authentication with the following features:
 
 - **Email/Password Registration**: Create new user accounts
-- **Login**: Secure session-based authentication
-- **Session Management**: Automatic session handling
-- **Logout**: Clean session termination
-- **Protected Routes**: Automatic redirection for unauthenticated users
-- **Current User Retrieval**: Get logged-in user information
+- **Login**
+- **Session Management**
+- **Logout**
 
 ### Authentication Flow
 
 1. Users register with email, password, and name
 2. Appwrite creates a user account and initiates a session
 3. Session is stored and managed by AuthContext
-4. Protected routes check authentication status
-5. Users can logout to terminate the session
+4. Users can logout to terminate the session
 
-## 🏗️ Architecture
+## Architecture
 
 ### Authentication Service (`services/authen.js`)
 
